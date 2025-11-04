@@ -1,14 +1,97 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Imágenes</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f0f4f8, #dbe9f6);
+            color: #333;
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #444;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            font-size: 1.1rem;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        figure:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 12px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            color: #222;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <h1>Titulo 1</h1>
     <h2>Titulo 2</h2>
     <p>parrafo</p>
-    <img src="Ibero Pagina prueba.jpeg" alt="Descripción de la imagen" width="300">
-    <img src="Impresion3D.jpg" alt="Impresión 3D de una esfera" width="300">
-    <img src="CorteLaser.jpg" alt="Cubo de madera cortado por láser" width="300">
+
+    <figure>
+        <img src="Ibero Pagina prueba.jpeg" alt="Descripción de la imagen">
+        <figcaption>Ibero Pagina prueba</figcaption>
+    </figure>
+
+    <figure>
+        <img src="Impresion3D.jpg" alt="Impresión 3D de una esfera">
+        <figcaption>Impresion3D</figcaption>
+    </figure>
+
+    <figure>
+        <img src="CorteLaser.jpg" alt="Cubo de madera cortado por láser">
+        <figcaption>CorteLaser</figcaption>
+    </figure>
+
+    <figure>
+        <img src="pcb.jpg" alt="Placa de circuito impreso">
+        <figcaption>pcb</figcaption>
+    </figure>
 </body>
 </html>
